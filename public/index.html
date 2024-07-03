@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Question Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+  <div class="w-full max-w-md p-8 space-y-4 bg-white rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold text-center">Interview Question Generator</h1>
+    <form id="question-form" class="space-y-4">
+      <div class="form-control">
+        <input type="text" id="question-input" class="input input-bordered" placeholder="Type your question here">
+      </div>
+      <button type="submit" id="generate-button" class="btn btn-primary w-full">Generate Questions</button>
+    </form>
+    <div id="result" class="mt-4 p-4 border rounded-lg bg-gray-50">
+      <ul id="result-list" class="list-disc list-inside"></ul>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
