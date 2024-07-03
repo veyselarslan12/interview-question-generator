@@ -3,6 +3,7 @@ document.getElementById('question-form').addEventListener('submit', async (event
 
     const input = document.getElementById('question-input').value
     const resulList = document.getElementById('result-list')
+    resulList.innerHTML = ''; // clears previous results
 
     try {
         const response = await fetch('/generate-questions', {
